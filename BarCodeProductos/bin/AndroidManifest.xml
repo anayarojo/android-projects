@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.BarCodeProductos"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+    
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.BarCodeProductos.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.BarCodeProductos.MainActivityScanner"
+            android:label="@string/title_activity_main_activity_scanner"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.BarCodeProductos.MainActivityConsultas"
+            android:label="@string/title_activity_main_activity_consultas"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.BarCodeProductos.MainActivityConsultaEspecifica"
+            android:label="@string/title_activity_main_activity_consulta_especifica"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.BarCodeProductos.MainActivityModificar"
+            android:label="@string/title_activity_main_activity_modificar"
+            android:screenOrientation="landscape">
+        </activity>
+    </application>
+
+</manifest>

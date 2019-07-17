@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidTabHost</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_tab_activity1">TabActivity 1</string>
+    <string name="title_activity_tab_activity2">TabActivity 2</string>
+    <string name="title_activity_tab_activity3">TabActivity 3</string>
+
+</resources>

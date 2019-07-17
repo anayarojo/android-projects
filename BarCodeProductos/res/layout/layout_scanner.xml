@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivityScanner" >
+
+    <EditText
+        android:id="@+id/txtCodigo"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@+id/btnScanner"
+        android:background="@drawable/borde_etiqueta"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/txtProducto"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/lblPrecio"
+        android:layout_alignRight="@+id/btnOpciones"
+        android:layout_alignTop="@+id/txtCodigo"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/borde_etiqueta"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/txtPrecio"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/lblPrecio"
+        android:layout_alignRight="@+id/btnScanner"
+        android:layout_below="@+id/txtProducto"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/borde_etiqueta"
+        android:gravity="center"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <Button
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:text="Registrar"
+            android:id="@+id/btnRegistrar" android:layout_below="@+id/txtPrecio" android:layout_centerHorizontal="true"
+            android:background="@drawable/brode_boton" android:textColor="#ffffff" android:textSize="18dp"
+            android:layout_marginTop="10dp" android:onClick="evtRegistrar"/>
+
+    <ImageButton
+        android:id="@+id/btnScanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btnOpciones"
+        android:layout_alignTop="@+id/btnRegistrar"
+        android:background="@drawable/scanner"
+        android:onClick="evtScanner" />
+
+    <TextView
+        android:id="@+id/lblPrecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblProducto"
+        android:layout_below="@+id/txtProducto"
+        android:text="Precio"
+        android:textColor="#ffffff" />
+
+    <ImageButton
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnRegistrar"
+        android:layout_alignLeft="@+id/lblPrecio"
+        android:layout_alignRight="@+id/lblPrecio"
+        android:layout_alignTop="@+id/btnRegistrar"
+        android:background="@drawable/volver"
+        android:onClick="evtVolver" />
+
+    <TextView
+        android:id="@+id/lblProducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtProducto"
+        android:layout_alignLeft="@+id/lblCodigo"
+        android:layout_marginBottom="35dp"
+        android:text="Producto"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/lblCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtProducto"
+        android:layout_alignLeft="@+id/txtCodigo"
+        android:text="Codigo"
+        android:textColor="#ffffff" />
+
+    <ImageButton
+        android:id="@+id/btnOpciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lblCodigo"
+        android:layout_marginLeft="68dp"
+        android:layout_toRightOf="@+id/btnRegistrar"
+        android:background="@drawable/restablecer"
+        android:onClick="evtOpciones" />
+
+</RelativeLayout>

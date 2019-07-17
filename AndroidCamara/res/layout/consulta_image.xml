@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivityConsultar" >
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Imagen"
+              android:id="@+id/lblImagen"
+              android:textSize="20dp" android:textColor="#ffffff" android:layout_alignParentTop="true"
+              android:layout_centerHorizontal="true" android:layout_marginTop="10dp"/>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Image"
+               android:layout_below="@+id/lblImagen" android:layout_centerHorizontal="true"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Consultar Imagen"
+              android:id="@+id/lblConsultar"
+              android:textSize="20dp" android:textColor="#ffffff"
+              android:layout_above="@+id/txtID" android:layout_centerHorizontal="true"/>
+    <EditText android:layout_width="wrap_content" android:layout_height="40dp" android:inputType="number"
+              android:ems="10" android:id="@+id/txtID"
+              android:gravity="center"
+              android:background="@drawable/borde_textfield"
+              android:layout_above="@+id/btnConsultar" android:layout_centerHorizontal="true"/>
+    <Button android:layout_width="wrap_content" android:layout_height="40dp" android:text="Consultar"
+            android:id="@+id/btnConsultar" android:textSize="20dp" android:onClick="evtConsultar"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="52dp"
+            android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"/>
+    <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/btnVolver"
+            android:background="@drawable/volver"
+            android:onClick="evtVolver" android:layout_alignTop="@+id/btnConsultar"
+            android:layout_toLeftOf="@+id/lblConsultar" android:layout_marginTop="3dp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bytes:"
+              android:id="@+id/lblBytes" android:textSize="20dp" android:textColor="#ffffff"
+              android:layout_above="@+id/lblConsultar" android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

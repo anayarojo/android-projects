@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" android:gravity="center"
+        android:id="@+id/lblMensaje" android:layout_below="@+id/RGrupo" android:layout_alignLeft="@+id/RGrupo"/>
+
+    <RadioGroup
+        android:id="@+id/RGrupo"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:measureWithLargestChild="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Casado"
+                android:id="@+id/rdCasado" android:layout_gravity="left|center_vertical"/>
+        <RadioButton
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Soltero"
+                android:id="@+id/rdSoltero" android:layout_gravity="left|center_vertical"/>
+        <RadioButton
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Feliz"
+                android:id="@+id/rdFeliz" android:layout_gravity="left|center_vertical"/>
+    </RadioGroup>
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Da Click Para Mostrar Mensaje"
+              android:gravity="center" android:id="@+id/lblClick"
+              android:layout_below="@+id/lblMensaje" android:layout_centerHorizontal="true"
+              android:layout_marginTop="20dp"/>
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CheckBox3"
+            android:id="@+id/Check3"
+            android:layout_below="@+id/Check2" android:layout_alignLeft="@+id/lblClick" android:onClick="evtCheck"/>
+    <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CheckBox1"
+              android:id="@+id/Check1"
+              android:layout_marginTop="67dp" android:layout_below="@+id/lblClick"
+              android:layout_alignLeft="@+id/lblClick" android:onClick="evtCheck"/>
+    <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CheckBox2"
+              android:id="@+id/Check2"
+              android:layout_below="@+id/Check1" android:layout_alignLeft="@+id/lblClick" android:onClick="evtCheck"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desactivado"
+            android:id="@+id/lbl3"
+            android:layout_below="@+id/Check2" android:layout_alignRight="@+id/lblClick"
+            android:layout_toRightOf="@+id/Check3" android:layout_alignBottom="@+id/Check3"
+            android:gravity="center"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Desactivado"
+              android:id="@+id/lbl2"
+              android:layout_above="@+id/lbl3" android:layout_alignLeft="@+id/lbl3"
+              android:layout_alignRight="@+id/lblClick" android:layout_alignTop="@+id/Check2"
+              android:gravity="center"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Desactivado"
+              android:id="@+id/lbl1"
+              android:layout_above="@+id/lbl2" android:layout_alignLeft="@+id/lbl2"
+              android:layout_alignRight="@+id/lbl2" android:layout_alignTop="@+id/Check1"
+              android:gravity="center"/>
+    <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_below="@+id/Check3"
+            android:layout_alignLeft="@+id/Check3" android:layout_marginTop="18dp" android:layout_toLeftOf="@+id/lbl3">
+    </RadioGroup>
+
+</RelativeLayout>

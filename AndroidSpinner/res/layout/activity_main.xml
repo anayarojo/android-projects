@@ -1,0 +1,50 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Spinner
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:id="@+id/Spiner" android:layout_alignParentTop="true"
+            android:layout_marginTop="18dp" android:layout_alignParentRight="true" android:layout_x="8dp"
+            android:layout_y="10dp"/>
+    <TextView
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:text="--"
+            android:id="@+id/lblSpiner" android:layout_below="@+id/Spiner"
+            android:layout_marginTop="38dp" android:layout_alignRight="@+id/Spiner"
+            android:layout_alignLeft="@+id/Spiner" android:gravity="center" android:layout_x="8dp"
+            android:layout_y="76dp"/>
+    <EditText
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:id="@+id/txtAgregar"
+            android:background="#f9fffd" android:gravity="center"
+            android:layout_marginTop="81dp" android:layout_below="@+id/btnRestablecer"
+            android:layout_alignLeft="@+id/btnRestablecer" android:layout_alignRight="@+id/btnRestablecer"
+            android:layout_x="8dp" android:layout_y="201dp"/>
+    <Button
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:text="Agregar"
+            android:id="@+id/btnAgregar"
+            android:onClick="evtAgregar"
+            android:layout_below="@+id/txtAgregar" android:layout_alignLeft="@+id/txtAgregar"
+            android:layout_alignRight="@+id/txtAgregar" android:layout_x="8dp" android:layout_y="250dp"/>
+    <Button
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:text="Restablecer"
+            android:id="@+id/btnRestablecer" android:layout_below="@+id/lblSpiner" android:layout_alignRight="@+id/lblSpiner"
+            android:layout_alignLeft="@+id/lblSpiner" android:onClick="evtRestablecer" android:layout_x="8dp"
+            android:layout_y="120dp"/>
+
+</AbsoluteLayout>

@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+   <item android:id="@+id/MnuOpc1" android:title="Usuario" 
+	      android:icon="@drawable/usuario"></item>
+	<item android:id="@+id/MnuOpc2" android:title="Agregar" 
+	      android:icon="@drawable/agregar"></item>
+	<item android:id="@+id/MnuOpc3" android:title="Carrito" 
+	      android:icon="@drawable/carrito">
+		<menu>
+			<group android:id="@+id/grupo1" 
+				   android:checkableBehavior="single">
+
+				<item android:id="@+id/SubMnuOpc1"
+					  android:title="Comprar" 
+					  android:icon="@drawable/carrito"/>
+				<item android:id="@+id/SubMnuOpc2"
+					  android:title="Eliminar"
+					  android:icon="@drawable/eliminar"/>
+
+			</group>
+		</menu>
+	</item>
+
+</menu>
